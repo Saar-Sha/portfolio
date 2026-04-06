@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Saar Sharir</title>
+  <meta name="description" content="About Saar Sharir — Data Analyst, Agronomist, and BI Developer. Background, philosophy, and professional journey." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero { padding-top: calc(var(--nav-height) + 4rem); padding-bottom: 3rem; border-bottom:1px solid var(--border); background:var(--bg-2); }
+    .about-page-grid { display:grid; grid-template-columns:2fr 1.2fr; gap:5rem; align-items:start; }
+    .philosophy-block { padding:2rem; border-left:2px solid var(--accent); background:var(--accent-glow); border-radius:0 var(--radius-lg) var(--radius-lg) 0; margin-block:2rem; }
+    .philosophy-block p { color:var(--text-2); font-style:italic; font-size:1.05rem; max-width:none; }
+    @media (max-width:900px) { .about-page-grid { grid-template-columns:1fr; gap:3rem; } }
+  </style>
+</head>
+<body>
+
+<nav class="nav" role="navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">Saar <span>Sharir</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html#about" class="active">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="../assets/saar-sharir-cv.pdf" download style="font-size:0.75rem;padding:0.5rem 0.9rem">↓ Resume</a>
+      <button class="btn-theme" id="btn-theme" aria-label="Toggle theme">☀</button>
+    </div>
+    <button class="nav-mobile-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile-menu" id="mobile-menu">
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#skills">Skills</a>
+  <a href="./projects.html">Projects</a>
+  <a href="../index.html#experience">Experience</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="section-label" style="margin-bottom:0.75rem">Profile</p>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;margin-bottom:0.75rem">About Saar Sharir</h1>
+    <p style="color:var(--text-2);max-width:56ch;font-size:1.05rem;font-weight:300">Data analyst, agronomist, and ETL builder that connect raw field data to real decisions.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="about-page-grid">
+
+      <!-- Main content -->
+      <div>
+        <div class="section-header">
+          <p class="section-label">Background</p>
+          <h2 class="section-title reveal">Data Analyst | Data Specialist | AgriTech & Environmental </h2>
+        </div>
+
+        <p class="reveal" style="margin-bottom:1.25rem">
+          My path into data started in the biological and agricultural world.
+          I hold a B.Sc. in Plant Sciences from the Hebrew University of Jerusalem,
+          where my academic foundation focused on plant science with specialization in cultivation, breeding, and Remote sensing.
+        </p>
+
+        <p class="reveal reveal-delay-1" style="margin-bottom:1.25rem">
+          Before moving fully into analytics and BI, I worked directly in research and applied
+          agronomy environments. At the Weizmann Institute, I worked as a research assistant in a
+          molecular genetics laboratory, supporting experiments involving DNA extraction, primer
+          design, PCR, electrophoresis, and related research workflows. Later, at Danziger, I
+          served as Head of Pre-Breeding for Ornamental Plants, working on breeding programs,
+          growth protocols, field trials, and evaluation of plant populations.
+        </p>
+
+        <p class="reveal reveal-delay-2" style="margin-bottom:1.25rem">
+          These experiences shaped how I think about data: every number represents a real biological
+          or environmental process. Over time I developed the technical skills needed to work with
+          that data at scale - SQL, Python, Power BI, and GIS - to build pipelines and analytical
+          systems that turn raw measurements into usable information.
+        </p>
+
+        <p class="reveal reveal-delay-2" style="margin-bottom:2rem">
+          Today I work as a BI developer and data analyst in forestry and environmental contexts,
+          integrating field measurements, operational databases, and spatial data into unified
+          analytical environments that support planning, monitoring, research, and decision-making.
+          Rather than treating analysis as isolated reporting, I focus on building reliable
+          infrastructure: structured datasets and decision-support dashboards that help organizations
+          understand and manage complex agricultural and environmental systems.
+        </p>
+
+        <div class="section-header" style="margin-top:3rem">
+          <p class="section-label">Approach</p>
+          <h3 class="reveal" style="font-family:var(--font-display);font-size:1.6rem;font-weight:400">How I work</h3>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem">
+          <div class="card reveal">
+            <div class="skill-group-title" style="margin-bottom:0.5rem">🎯 Problem-First</div>
+            <p style="font-size:0.88rem">I start with the decision that needs to be made, not the tool. The right model or dashboard is the one that changes behavior.</p>
+          </div>
+          <div class="card reveal reveal-delay-1">
+            <div class="skill-group-title" style="margin-bottom:0.5rem">🏗 Systems Thinking</div>
+            <p style="font-size:0.88rem">Data work is infrastructure. I build pipelines and models that hold up over time — maintainable, documented, and reliable.</p>
+          </div>
+          <div class="card reveal reveal-delay-2">
+            <div class="skill-group-title" style="margin-bottom:0.5rem">🌱 Domain Grounding</div>
+            <p style="font-size:0.88rem">Years in agronomy and molecular research mean I understand what the data actually represents — not just how to query it.</p>
+          </div>
+          <div class="card reveal reveal-delay-3">
+            <div class="skill-group-title" style="margin-bottom:0.5rem">✂ Precision Over Volume</div>
+            <p style="font-size:0.88rem">A focused dashboard that drives a real decision is more valuable than a comprehensive report that doesn't get read.</p>
+          </div>
+        </div>
+
+        <div class="section-header" style="margin-top:3rem">
+          <p class="section-label">Publications</p>
+          <h3 class="reveal" style="font-family:var(--font-display);font-size:1.6rem;font-weight:400">Research contributions</h3>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1rem">
+          <div class="card reveal">
+            <div style="font-family:var(--font-mono);font-size:0.72rem;color:var(--accent);letter-spacing:0.08em;margin-bottom:0.5rem">CELL HOST &amp; MICROBE — 2023</div>
+            <div style="font-size:0.95rem;color:var(--text);margin-bottom:0.35rem;line-height:1.4">Inflammatory bowel disease microbiome: Functional pathways and microbial drivers</div>
+            <p style="font-size:0.85rem;margin:0">A large-scale collaborative study exploring microbial drivers of IBD. Contributing co-author.</p>
+          </div>
+          <div class="card reveal reveal-delay-1">
+            <div style="font-family:var(--font-mono);font-size:0.72rem;color:var(--accent);letter-spacing:0.08em;margin-bottom:0.5rem">NATURE — 2019 · 574(7780):691–695</div>
+            <div style="font-size:0.95rem;color:var(--text);margin-bottom:0.35rem;line-height:1.4">Cyclic GMP-AMP signaling protects bacteria against viral infection</div>
+            <p style="font-size:0.85rem;margin:0">Cohen D, Melamed S, Millman A, Shulman G, Oppenheimer-Shaanan Y, Kacen A, Doron S, Amitai G, Sorek R.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div>
+        <div class="card reveal" style="margin-bottom:1.25rem">
+          <div class="skill-group-title" style="margin-bottom:1rem">Quick Facts</div>
+          <div style="display:flex;flex-direction:column;gap:0.9rem">
+            <div>
+              <div class="form-label" style="margin-bottom:0.2rem">Location</div>
+              <div style="font-size:0.9rem;color:var(--text-2)">Tel Aviv, Israel</div>
+            </div>
+            <div>
+              <div class="form-label" style="margin-bottom:0.2rem">Languages</div>
+              <div style="font-size:0.9rem;color:var(--text-2)">Hebrew (native) · English (native-level) · Arabic (basic)</div>
+            </div>
+            <div>
+              <div class="form-label" style="margin-bottom:0.2rem">Availability</div>
+              <div style="font-size:0.9rem;color:var(--green)">● Open to opportunities</div>
+            </div>
+            <div>
+              <div class="form-label" style="margin-bottom:0.2rem">Projects &amp; Papers</div>
+              <div id="about-project-count" style="font-family:var(--font-display);font-size:2rem;color:var(--accent);line-height:1;margin-top:0.15rem">—</div>
+            </div>
+            <div>
+              <div class="form-label" style="margin-bottom:0.2rem">Focus Areas</div>
+              <div class="tag-group" style="margin-top:0.25rem">
+                <span class="tag">Data Analytics</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+		<span class="tag">ML & LLM</span>
+                <span class="tag">Forestry &amp; Environment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-1" style="margin-bottom:1.25rem">
+          <div class="skill-group-title" style="margin-bottom:1rem">Connect</div>
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <a href="https://github.com/Saar-Sha" target="_blank" rel="noopener" class="contact-item" style="padding:0.75rem 1rem">
+              <span class="contact-icon">⌥</span>
+              <div><span class="contact-label">GitHub</span><span class="contact-value">github.com/Saar-Sha</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/saar-sharir" target="_blank" rel="noopener" class="contact-item" style="padding:0.75rem 1rem">
+              <span class="contact-icon" style="font-style:normal;font-weight:700;font-size:0.75rem">in</span>
+              <div><span class="contact-label">LinkedIn</span><span class="contact-value">saarsharir</span></div>
+            </a>
+            <a href="mailto:saarsharir@gmail.com" class="contact-item" style="padding:0.75rem 1rem">
+              <span class="contact-icon">✉</span>
+              <div><span class="contact-label">Email</span><span class="contact-value">saarsharir@gmail.com</span></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2" style="display:flex;gap:0.75rem;flex-wrap:wrap">
+          <a class="btn btn-primary" href="../assets/saar-sharir-cv.pdf" download>↓ Download Resume</a>
+          <a class="btn btn-outline" href="./projects.html">View Projects →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-left">© 2025 Saar Sharir</p>
+    <ul class="footer-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="https://github.com/Saar-Sha" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+fetch('../data/projects.json')
+  .then(r => r.json())
+  .then(data => {
+    const total = (data.tools || []).length + (data.research || []).length;
+    const el = document.getElementById('about-project-count');
+    if (el) el.textContent = total;
+  })
+  .catch(() => {});
+</script>
+<script>
+  // Adjust relative paths for subpage
+  window._isSubpage = true;
+</script>
+<script>
+  // Override fetch path for subpage
+  const _origFetch = window.fetch;
+  window.fetch = function(url, opts) {
+    if (url === './data/projects.json') url = '../data/projects.json';
+    return _origFetch(url, opts);
+  };
+</script>
+<script src="../js/main.js"></script>
+</body>
+</html>

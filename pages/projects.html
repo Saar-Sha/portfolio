@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Saar Sharir</title>
+  <meta name="description" content="Tools, dashboards, pipelines, and research papers by Saar Sharir — Data Analyst and Agronomist." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero {
+      padding-top: calc(var(--nav-height) + 4rem);
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-2);
+    }
+    .projects-layout {
+      padding-block: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" role="navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">Saar <span>Sharir</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="./projects.html" class="active">Projects</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="../assets/saar-sharir-cv.pdf" download style="font-size:0.75rem;padding:0.5rem 0.9rem">↓ Resume</a>
+      <button class="btn-theme" id="btn-theme" aria-label="Toggle theme">☀</button>
+    </div>
+    <button class="nav-mobile-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile-menu" id="mobile-menu">
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#skills">Skills</a>
+  <a href="./projects.html">Projects</a>
+  <a href="../index.html#experience">Experience</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <p class="section-label" style="margin-bottom:0.75rem">Portfolio</p>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;margin-bottom:0.75rem">Projects &amp; Research</h1>
+    <p style="color:var(--text-2);max-width:56ch;font-size:1.05rem;font-weight:300">
+      Tools built and research conducted at the intersection of data science, geospatial analysis, and agricultural systems.
+    </p>
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="projects-layout">
+  <div class="container">
+
+    <div class="projects-controls">
+      <!-- Tabs -->
+      <div class="projects-tabs">
+        <button class="tab-btn active" data-tab="tools">⚙ Tools</button>
+        <button class="tab-btn" data-tab="research">📄 Research Papers</button>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-group" id="filter-group"></div>
+    </div>
+
+    <!-- Grid -->
+    <div class="projects-grid" id="projects-grid">
+      <div style="grid-column:1/-1;padding:3rem 0;color:var(--text-3);font-family:var(--font-mono);font-size:0.85rem">
+        Loading projects...
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Project Detail Modal -->
+<div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+  <div class="modal" id="modal-content-wrapper">
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-left">© 2025 Saar Sharir</p>
+    <ul class="footer-links" role="list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="https://github.com/Saar-Sha" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  // Adjust relative paths for subpage
+  window._isSubpage = true;
+</script>
+<script>
+  // Override fetch path for subpage
+  const _origFetch = window.fetch;
+  window.fetch = function(url, opts) {
+    if (url === './data/projects.json') url = '../data/projects.json';
+    return _origFetch(url, opts);
+  };
+</script>
+<script src="../js/main.js"></script>
+<script>
+  // Handle #tools / #research hash on load
+  document.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash;
+    if (hash === '#research') {
+      const btn = document.querySelector('[data-tab="research"]');
+      if (btn) btn.click();
+    }
+  });
+</script>
+</body>
+</html>
