@@ -32,7 +32,7 @@ Search these placeholders in HTML files and replace:
 
 | Placeholder | Replace With |
 |-------------|-------------|
-| saar@example.com | Your real email |
+| saarsharir@gmail.com | Your email |
 | https://github.com/Saar-Sha | Your GitHub URL |
 | www.linkedin.com/in/saar-sharir | Your LinkedIn URL |
 | ./assets/saar-sharir-cv.pdf | Your resume PDF path |
