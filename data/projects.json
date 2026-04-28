@@ -2,7 +2,7 @@
   "tools": [
     {
       "id": "agri-yield-predictor",
-      "project_title": "Agricultural Yield Predictor TEST",
+      "project_title": "Agricultural Yield Predictor",
       "short_description": "ML pipeline predicting crop yields from satellite imagery, soil data, and weather patterns.",
       "category": "Tool",
       "technologies_used": ["Python", "scikit-learn", "Google Earth Engine", "PostgreSQL", "Pandas"],
