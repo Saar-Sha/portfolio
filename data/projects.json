@@ -5,7 +5,13 @@
       "project_title": "Agricultural Yield Predictor",
       "short_description": "ML pipeline predicting crop yields from satellite imagery, soil data, and weather patterns.",
       "category": "Tool",
-      "technologies_used": ["Python", "scikit-learn", "Google Earth Engine", "PostgreSQL", "Pandas"],
+      "technologies_used": [
+        "Python",
+        "scikit-learn",
+        "Google Earth Engine",
+        "PostgreSQL",
+        "Pandas"
+      ],
       "problem_description": "Farmers and agronomists lack accessible tools to forecast seasonal yields early enough to make resource allocation decisions.",
       "solution_approach": "Built an end-to-end ML pipeline ingesting multi-spectral satellite data (NDVI, EVI), soil composition, and historical weather. Trained gradient boosting models with cross-validation across crop zones.",
       "results_or_impact": "Achieved 87% yield prediction accuracy within a 15% margin. Deployed as a REST API consumed by a Power BI dashboard used by 3 regional agricultural departments.",
@@ -15,14 +21,25 @@
         "paper": null
       },
       "featured": true,
-      "tags": ["Python", "ML", "GIS", "Agriculture"]
+      "tags": [
+        "Python",
+        "ML",
+        "GIS",
+        "Agriculture"
+      ]
     },
     {
       "id": "gis-water-stress",
       "project_title": "GIS Water Stress Mapping Tool",
       "short_description": "Automated geospatial pipeline mapping irrigation water stress across agricultural regions.",
       "category": "Tool",
-      "technologies_used": ["Python", "QGIS", "PostGIS", "GeoPandas", "Rasterio"],
+      "technologies_used": [
+        "Python",
+        "QGIS",
+        "PostGIS",
+        "GeoPandas",
+        "Rasterio"
+      ],
       "problem_description": "Water scarcity monitoring relied on manual field surveys — slow, expensive, and inconsistent across regions.",
       "solution_approach": "Developed an automated pipeline processing Sentinel-2 satellite images to compute NDWI and LST indices. Results are stored in PostGIS and rendered as dynamic maps.",
       "results_or_impact": "Reduced monitoring time from 3 weeks to 4 hours per cycle. Currently covering 200,000+ hectares across two basins.",
@@ -32,14 +49,25 @@
         "paper": null
       },
       "featured": true,
-      "tags": ["GIS", "Python", "SQL", "Agriculture"]
+      "tags": [
+        "GIS",
+        "Python",
+        "SQL",
+        "Agriculture"
+      ]
     },
     {
       "id": "bi-dashboard-ops",
       "project_title": "Operations Intelligence Dashboard",
       "short_description": "Real-time Power BI dashboard connecting ERP, field data, and logistics into a unified operations view.",
       "category": "Tool",
-      "technologies_used": ["Power BI", "DAX", "SQL Server", "Python", "Azure Data Factory"],
+      "technologies_used": [
+        "Power BI",
+        "DAX",
+        "SQL Server",
+        "Python",
+        "Azure Data Factory"
+      ],
       "problem_description": "Decision makers had no single pane of glass — data lived in 4 disconnected systems with no automated refresh.",
       "solution_approach": "Designed a star-schema data model in SQL Server, built ETL pipelines in Azure Data Factory, and authored a Power BI report with 12 interactive pages covering KPIs, forecasts, and drill-throughs.",
       "results_or_impact": "Reduced weekly reporting effort by 14 hours. Became the primary decision tool for the operations team of 40+ staff.",
@@ -49,14 +77,25 @@
         "paper": null
       },
       "featured": false,
-      "tags": ["Power BI", "SQL", "BI", "DAX"]
+      "tags": [
+        "Power BI",
+        "SQL",
+        "BI",
+        "DAX"
+      ]
     },
     {
       "id": "soil-analysis-pipeline",
       "project_title": "Soil Data ETL & Analysis Pipeline",
       "short_description": "Automated data pipeline ingesting lab soil reports and enriching them with spatial context.",
       "category": "Tool",
-      "technologies_used": ["Python", "Pandas", "PostgreSQL", "GeoPandas", "Airflow"],
+      "technologies_used": [
+        "Python",
+        "Pandas",
+        "PostgreSQL",
+        "GeoPandas",
+        "Airflow"
+      ],
       "problem_description": "Hundreds of soil lab reports in inconsistent formats sat in spreadsheets — unlinked to spatial data or trend analysis.",
       "solution_approach": "Built a Python ETL pipeline parsing PDFs and CSVs, normalizing values to standard units, linking to GIS parcels, and loading into a PostgreSQL analytical schema with weekly Airflow scheduling.",
       "results_or_impact": "Transformed 5 years of historical soil data into a queryable analytical dataset enabling time-series fertility trend analysis.",
@@ -66,7 +105,29 @@
         "paper": null
       },
       "featured": false,
-      "tags": ["Python", "SQL", "GIS", "Data Engineering"]
+      "tags": [
+        "Python",
+        "SQL",
+        "GIS",
+        "Data Engineering"
+      ]
+    },
+    {
+      "id": "invoice-ocr-reader",
+      "project_title": "Invoice OCR Reader",
+      "short_description": "MISSING: short project description not available from verified README content in this session.",
+      "category": "Tool",
+      "technologies_used": [],
+      "problem_description": "MISSING: problem description not available from verified README content in this session.",
+      "solution_approach": "MISSING: solution approach not available from verified README content in this session.",
+      "results_or_impact": "MISSING: results or impact not available from verified README content in this session.",
+      "links": {
+        "github": "https://github.com/Saar-Sha/invoice-ocr-reader",
+        "paper": null,
+        "demo": null
+      },
+      "featured": false,
+      "tags": []
     }
   ],
   "research": [
@@ -75,7 +136,12 @@
       "project_title": "Remote Sensing Indices for Early Crop Stress Detection",
       "short_description": "Comparative analysis of NDVI, EVI, and SAVI indices for early-stage abiotic stress detection in field crops.",
       "category": "Research Paper",
-      "technologies_used": ["Python", "R", "Google Earth Engine", "Sentinel-2"],
+      "technologies_used": [
+        "Python",
+        "R",
+        "Google Earth Engine",
+        "Sentinel-2"
+      ],
       "problem_description": "Early detection of crop stress (water, nutrient, pest) using remote sensing remains inconsistent across crop types and growth stages.",
       "solution_approach": "Conducted a controlled field study correlating in-situ biomass and stress measurements with four remote sensing indices across three crop species over two growing seasons.",
       "results_or_impact": "EVI outperformed NDVI in high-biomass conditions by 23%. Provided practical thresholds for operational stress alert systems.",
@@ -85,14 +151,24 @@
         "paper": null
       },
       "featured": true,
-      "tags": ["GIS", "Agriculture", "Remote Sensing", "Research"]
+      "tags": [
+        "GIS",
+        "Agriculture",
+        "Remote Sensing",
+        "Research"
+      ]
     },
     {
       "id": "data-driven-irrigation",
       "project_title": "Data-Driven Irrigation Scheduling in Semi-Arid Environments",
       "short_description": "Framework combining soil moisture sensors, ET models, and weather APIs to optimize irrigation timing.",
       "category": "Research Paper",
-      "technologies_used": ["Python", "IoT", "SQL", "Statistical Modeling"],
+      "technologies_used": [
+        "Python",
+        "IoT",
+        "SQL",
+        "Statistical Modeling"
+      ],
       "problem_description": "Irrigation over-application is a major driver of water waste in semi-arid agriculture. Traditional scheduling is calendar-based, not demand-based.",
       "solution_approach": "Designed an integrated sensing and decision framework using IoT soil moisture probes, Penman-Monteith ET calculations, and ML-based anomaly detection for optimal scheduling recommendations.",
       "results_or_impact": "15–22% reduction in water application with no measurable yield loss across 3 trial seasons. Framework adopted as basis for regional guidelines.",
@@ -102,7 +178,12 @@
         "paper": null
       },
       "featured": true,
-      "tags": ["Agriculture", "Python", "IoT", "Research"]
+      "tags": [
+        "Agriculture",
+        "Python",
+        "IoT",
+        "Research"
+      ]
     }
   ]
 }
