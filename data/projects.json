@@ -27,6 +27,37 @@
         "BI",
         "DAX"
       ]
+    },
+    {
+      "id": "invoice-ocr-reader-portfolio",
+      "project_title": "invoice-ocr-reader-portfolio",
+      "short_description": "Command-line OCR tool for extracting structured invoice data from PDF invoices, supporting Hebrew and English text, validation, and export to JSON, CSV, and Excel.",
+      "category": "Tool",
+      "technologies_used": [
+        "Python",
+        "Tesseract OCR",
+        "pdf2image",
+        "Pillow",
+        "pandas",
+        "openpyxl",
+        "pytest"
+      ],
+      "problem_description": "Invoice data is often locked inside PDF files, making manual extraction slow, error-prone, and difficult to scale across many documents and formats.",
+      "solution_approach": "The project converts invoice PDFs into images, applies Tesseract OCR, extracts key invoice fields using pattern matching, validates the extracted data, and exports structured results in JSON, CSV, or Excel formats.",
+      "results_or_impact": "Automates invoice processing workflows by producing structured, validated invoice outputs from raw PDF files. The project includes 95%+ test coverage and supports batch processing for multiple PDF invoices.",
+      "links": {
+        "github": "https://github.com/Saar-Sha/invoice-ocr-reader-portfolio",
+        "paper": null,
+        "demo": null
+      },
+      "featured": false,
+      "tags": [
+        "Python",
+        "OCR",
+        "Data Extraction",
+        "Automation",
+        "Invoices"
+      ]
     }
   ],
   "research": [
