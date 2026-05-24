@@ -1,62 +1,6 @@
 {
   "tools": [
     {
-      "id": "agri-yield-predictor",
-      "project_title": "Agricultural Yield Predictor",
-      "short_description": "ML pipeline predicting crop yields from satellite imagery, soil data, and weather patterns.",
-      "category": "Tool",
-      "technologies_used": [
-        "Python",
-        "scikit-learn",
-        "Google Earth Engine",
-        "PostgreSQL",
-        "Pandas"
-      ],
-      "problem_description": "Farmers and agronomists lack accessible tools to forecast seasonal yields early enough to make resource allocation decisions.",
-      "solution_approach": "Built an end-to-end ML pipeline ingesting multi-spectral satellite data (NDVI, EVI), soil composition, and historical weather. Trained gradient boosting models with cross-validation across crop zones.",
-      "results_or_impact": "Achieved 87% yield prediction accuracy within a 15% margin. Deployed as a REST API consumed by a Power BI dashboard used by 3 regional agricultural departments.",
-      "links": {
-        "github": "https://github.com/Saar-Sha",
-        "demo": null,
-        "paper": null
-      },
-      "featured": true,
-      "tags": [
-        "Python",
-        "ML",
-        "GIS",
-        "Agriculture"
-      ]
-    },
-    {
-      "id": "gis-water-stress",
-      "project_title": "GIS Water Stress Mapping Tool",
-      "short_description": "Automated geospatial pipeline mapping irrigation water stress across agricultural regions.",
-      "category": "Tool",
-      "technologies_used": [
-        "Python",
-        "QGIS",
-        "PostGIS",
-        "GeoPandas",
-        "Rasterio"
-      ],
-      "problem_description": "Water scarcity monitoring relied on manual field surveys — slow, expensive, and inconsistent across regions.",
-      "solution_approach": "Developed an automated pipeline processing Sentinel-2 satellite images to compute NDWI and LST indices. Results are stored in PostGIS and rendered as dynamic maps.",
-      "results_or_impact": "Reduced monitoring time from 3 weeks to 4 hours per cycle. Currently covering 200,000+ hectares across two basins.",
-      "links": {
-        "github": "https://github.com/Saar-Sha",
-        "demo": null,
-        "paper": null
-      },
-      "featured": true,
-      "tags": [
-        "GIS",
-        "Python",
-        "SQL",
-        "Agriculture"
-      ]
-    },
-    {
       "id": "bi-dashboard-ops",
       "project_title": "Operations Intelligence Dashboard",
       "short_description": "Real-time Power BI dashboard connecting ERP, field data, and logistics into a unified operations view.",
@@ -83,51 +27,6 @@
         "BI",
         "DAX"
       ]
-    },
-    {
-      "id": "soil-analysis-pipeline",
-      "project_title": "Soil Data ETL & Analysis Pipeline",
-      "short_description": "Automated data pipeline ingesting lab soil reports and enriching them with spatial context.",
-      "category": "Tool",
-      "technologies_used": [
-        "Python",
-        "Pandas",
-        "PostgreSQL",
-        "GeoPandas",
-        "Airflow"
-      ],
-      "problem_description": "Hundreds of soil lab reports in inconsistent formats sat in spreadsheets — unlinked to spatial data or trend analysis.",
-      "solution_approach": "Built a Python ETL pipeline parsing PDFs and CSVs, normalizing values to standard units, linking to GIS parcels, and loading into a PostgreSQL analytical schema with weekly Airflow scheduling.",
-      "results_or_impact": "Transformed 5 years of historical soil data into a queryable analytical dataset enabling time-series fertility trend analysis.",
-      "links": {
-        "github": "https://github.com/Saar-Sha",
-        "demo": null,
-        "paper": null
-      },
-      "featured": false,
-      "tags": [
-        "Python",
-        "SQL",
-        "GIS",
-        "Data Engineering"
-      ]
-    },
-    {
-      "id": "invoice-ocr-reader",
-      "project_title": "Invoice OCR Reader",
-      "short_description": "MISSING: short project description not available from verified README content in this session.",
-      "category": "Tool",
-      "technologies_used": [],
-      "problem_description": "MISSING: problem description not available from verified README content in this session.",
-      "solution_approach": "MISSING: solution approach not available from verified README content in this session.",
-      "results_or_impact": "MISSING: results or impact not available from verified README content in this session.",
-      "links": {
-        "github": "https://github.com/Saar-Sha/invoice-ocr-reader",
-        "paper": null,
-        "demo": null
-      },
-      "featured": false,
-      "tags": []
     }
   ],
   "research": [
